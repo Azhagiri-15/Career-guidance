@@ -10,20 +10,22 @@ body {
     color: #222;
 }
 
-.Profile-Sections {
+#Profile-Sections {
     justify-content: flex-end;
     display: flex;
     background-color: #2b4d70;
     padding: 15px 0;
 }
 
-.Profiles,
-#Profile1 
+.Profiles a,#Profile1
 {
-    margin-right: 45px;
+    text-decoration: none;
     color: #fff;
+    margin-right: 45px;
     cursor: pointer;
     font-weight: bold;
+}
+#Profile1,.Profiles{
     transition: transform 0.3s ease;
 }
 
@@ -240,7 +242,9 @@ body {
     flex-wrap: wrap;
 }
 
-.College-btn {
+.College-btn a {
+    text-decoration: none;
+    color: #fff;
     background-color: #1b3b6f;
     color: white;
     border: none;
@@ -251,17 +255,18 @@ body {
     transition: background 0.3s ease;
 }
 
-.College-btn:hover {
+.College-btn a:hover {
     background-color: #274d8a;
 }
 
-.College-btn.outline {
+.College-btn.outline a{
+    text-decoration: none;
     background: transparent;
     border: 2px solid #1b3b6f;
     color: #1b3b6f;
 }
 
-.College-btn.outline:hover {
+.College-btn.outline a:hover {
     background-color: #1b3b6f;
     color: white;
 }
